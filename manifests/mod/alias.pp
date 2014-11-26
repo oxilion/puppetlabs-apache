@@ -6,6 +6,7 @@ class apache::mod::alias(
     'redhat'  => '/var/www/icons',
     'freebsd' => '/usr/local/www/apache22/icons',
   }
+  $icons_index = 'Indexes Multiviews'
   apache::mod { 'alias': }
   # Template uses $icons_path
   file { 'alias.conf':
